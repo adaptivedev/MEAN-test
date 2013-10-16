@@ -10,7 +10,7 @@ var i=0;
 
 app.get('/', function(request, response) {
   i++;
-  response.send('port:' + port + ' access ' + i);
+  response.send('wings: port:' + port + ' access ' + i);
 });
 
 app.listen(port, function() {
