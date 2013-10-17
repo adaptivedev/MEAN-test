@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>jQuery Hello World</title>
+ 
+<script type="text/javascript" src="jquery-2.0.3.js"></script>
+ 
+</head>
+ 
+<body>
+ 
+<script type="text/javascript">
+ 
+$(document).ready(function(){
+ $("#msgid").html("doc ready JQuery");
+});
+
+$.get( "web.js", function( data ) {
+  $( "body" )
+    .append( "data: " + data) 
+    .append( "Name: " + data.name ) // John
+    .append( "Time: " + data.time ); //  2pm
+}, "json" );
+ 
+</script>
+ 
+This is Hello World by HTML
+ 
+<div id="msgid">
+</div>
+ 
+</body>
+</html>
