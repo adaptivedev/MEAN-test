@@ -1,0 +1,15 @@
+<!doctype html>
+<html ng-app="logApp">
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div ng-app="logApp" ng-controller="LogCtrl">
+     <button ng-click="log1()">gen log1 events</button>
+     <button ng-click="log2()">gen log2 events</button>
+     <button ng-click="log3()">gen log3 events</button>
+     <p>logging this MongoDB: {{spice}}</p>
+    </div>
+  </body>
+</html>

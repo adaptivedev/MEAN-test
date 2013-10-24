@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>jQuery Hello World</title>
+<title>client to hit node.js</title>
  
 <script type="text/javascript" src="jquery-2.0.3.js"></script>
  
@@ -9,21 +9,25 @@
 <body>
  
 <script type="text/javascript">
+
+//alert("test");
  
 $(document).ready(function(){
  $("#msgid").html("doc ready JQuery");
 });
 
-$.get( "web.js", function( data ) {
+//$.get( "http://127.0.0.1/", function( data ) {
+$.get( "http://gb-penguin-eu.herokuapp.com", function( data ) {
+//$.get( "http://localhost/justhubit.com/test.html", function( data ) {
+  alert("got response");
   $( "body" )
-    .append( "data: " + data) 
-    .append( "Name: " + data.name ) // John
-    .append( "Time: " + data.time ); //  2pm
+    alert("got response");
+    //.append( "next, append the response" ); 
 }, "json" );
  
 </script>
  
-This is Hello World by HTML
+client to hit node
  
 <div id="msgid">
 </div>
