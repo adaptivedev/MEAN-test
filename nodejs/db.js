@@ -11,10 +11,5 @@ mongo.Db.connect(mongoUri, function (err, db) {
 	else {
 		exports.g_db = db;
 		console.log("exports.g_db"+exports.g_db);
-		//db.collection('mydocs', function(er, collection) g_db.useCollection());
 	}
 });
-
-//exports.g_db.useCollection() {
-//	console.log("useCollection to be overridden: entered");
-//}

@@ -2,7 +2,7 @@ var express = require("express");
 var dbjs = require('./db.js');
 
 var app = express();
-app.use(express.logger());
+//app.use(express.logger());
 
 var port = process.env.PORT || 2345;
 var port = 2345;
